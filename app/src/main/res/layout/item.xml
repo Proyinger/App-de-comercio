@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/m_image"
+        android:layout_width="107dp"
+        android:layout_height="102dp"
+        android:src="@android:drawable/ic_menu_search"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="2dp" />
+
+
+    <TextView
+        android:id="@+id/premioEntreg"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:text="Premio"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="@+id/m_image"/>
+
+    <TextView
+        android:id="@+id/puntosRequ"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="@+id/m_image"
+        android:layout_marginVertical="40dp"
+        android:text="Puntos"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

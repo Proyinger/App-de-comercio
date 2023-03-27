@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_facebook_button_text_color"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            tools:layout_conversion_absoluteHeight="25dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_editor_absoluteX="328dp"
+            tools:layout_editor_absoluteY="24dp"></Space>
+
+        <ImageView
+            android:id="@+id/perro1"
+            android:layout_width="match_parent"
+            android:layout_height="304dp"
+            android:src="@drawable/bolsas1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.837" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            tools:layout_conversion_absoluteHeight="25dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_editor_absoluteX="328dp"
+            tools:layout_editor_absoluteY="24dp"></Space>
+
+
+        <ImageView
+            android:id="@+id/comida"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/comida2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.837" />
+
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            tools:layout_conversion_absoluteHeight="20dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_editor_absoluteX="328dp"
+            tools:layout_editor_absoluteY="24dp"></Space>
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

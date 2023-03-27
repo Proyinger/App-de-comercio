@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fui_bgGitHub"
+    tools:context=".Opcion_Ingreso">
+
+    <Button
+        android:id="@+id/soy_comprador"
+        android:layout_width="141dp"
+        android:layout_height="44dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:onClick="comprador"
+        android:text="@string/soy_comrador"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nuevovendedor"
+        android:layout_width="236dp"
+        android:layout_height="46dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:onClick="nuevo_vendedor"
+        android:text="@string/nuevo_vendedor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.609" />
+
+    <Button
+        android:id="@+id/ya_vendo"
+        android:layout_width="231dp"
+        android:layout_height="47dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:onClick="ya_vende"
+        android:text="@string/soy_vendedor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124"
+        app:srcCompat="@drawable/logopequeno" />
+</androidx.constraintlayout.widget.ConstraintLayout>

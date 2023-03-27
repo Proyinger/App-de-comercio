@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fui_idp_button_background_google"
+    tools:context=".MenuInicial">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="369dp"
+        android:layout_height="487dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="horizontal">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="406dp"
+                android:layout_height="487dp"
+                android:background="@color/fui_bgGoogle">
+
+                <ImageView
+                    android:id="@+id/compraonline1"
+                    android:layout_width="203dp"
+                    android:layout_height="492dp"
+                    android:background="@color/fui_bgGoogle"
+                    android:src="@drawable/celular"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.006"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/tuspuntos"
+                    android:layout_width="134dp"
+                    android:layout_height="58dp"
+                    android:onClick="VerPuntos"
+                    android:text="@string/tuspuntos"
+                    android:textColor="@color/fui_bgEmail"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.779"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.195" />
+
+                <TextView
+                    android:id="@+id/tuvendedor"
+                    android:layout_width="137dp"
+                    android:layout_height="48dp"
+                    android:onClick="Vermapa"
+                    android:text="@string/vendedorfrecuente"
+                    android:textColor="@color/fui_bgEmail"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.795"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.553" />
+
+                <TextView
+                    android:id="@+id/tuproducto"
+                    android:layout_width="155dp"
+                    android:layout_height="57dp"
+                    android:onClick="Verproductos"
+                    android:text="@string/productofavorito"
+                    android:textColor="@color/fui_bgEmail"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.852"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.865" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/tuvendedor"
+                    app:layout_constraintHorizontal_bias="0.677"
+                    app:layout_constraintStart_toStartOf="@+id/compraonline1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.743"
+                    app:srcCompat="@drawable/carrito" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="212dp"
+                    android:layout_marginLeft="212dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/compraonline1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.12"
+                    app:srcCompat="@drawable/corazon" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="46dp"
+                    android:layout_height="49dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/tuvendedor"
+                    app:layout_constraintHorizontal_bias="0.694"
+                    app:layout_constraintStart_toStartOf="@+id/compraonline1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.44"
+                    app:srcCompat="@drawable/googlemaps" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="71dp"
+                    android:layout_height="43dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/compraonline1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.027"
+                    app:srcCompat="@drawable/logoanimado" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="350dp"
+                android:layout_height="474dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="73dp"
+                android:background="#ffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/tuproducto"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/phone1">
+
+            </com.airbnb.lottie.LottieAnimationView>
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tuspuntos2"
+        android:layout_width="240dp"
+        android:layout_height="47dp"
+        android:onClick="VerPuntos"
+        android:text="@string/terminos"
+        android:textColor="@color/fui_bgGitHub"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.649"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintVertical_bias="0.921" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="mínimo" tools:ignore="MissingDefaultResource">32dp</dimen>
+    <dimen name="medio" tools:ignore="MissingDefaultResource">64dp</dimen>
+    <dimen name="largo" tools:ignore="MissingDefaultResource">120dp</dimen>
+    <dimen name="maximo" tools:ignore="MissingDefaultResource">600dp</dimen>
+    <dimen name="texto" tools:ignore="MissingDefaultResource">24sp</dimen>
+
+</resources>

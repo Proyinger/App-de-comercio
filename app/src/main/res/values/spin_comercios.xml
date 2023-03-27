@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="combo_comercios">
+
+        <item>"Recover_Bags"</item>
+        <item>"Vet_Market"</item>
+        <item>"comercios"</item>
+
+    </string-array>
+</resources>
